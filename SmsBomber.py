@@ -197,7 +197,6 @@ def SmsBomber():
 #Attack
 def Attack():   
     os.system("clear")
-    time.sleep(1)
     Thread(target=Snap, args=[Number]).start()
     Thread(target=Divar, args=[Number]).start()
     Thread(target=Delino, args=[Number]).start()
@@ -207,6 +206,7 @@ def Attack():
     Thread(target=Pezeshket, args=[Number]).start()
     Thread(target=Helsa, args=[Number]).start()
     Thread(target=Taghche, args=[Number]).start()
+    time.sleep(1)
     Attack()
 #Run
 Panel()
