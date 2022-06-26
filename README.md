@@ -11,14 +11,3 @@ Using an automated tool called SMS Bomber, you can send a large number of text m
 6) cd SmsBomber
 7) sudo python3 SmsBomber.py
 8) Boommmmmmm :)))
-# Use in Termux :
-1) apt update
-2) apt upgrade
-3) pip install requests
-4) pip install colorama
-5) git clone https://github.com/Sardarcybery/SmsBomber
-6) cd SmsBomber
-7) python3 SmsBomber.py
-8) Boommmmmmm :)))
-9) # A D O R TM :
-10) 01001 . . .
